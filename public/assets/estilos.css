@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(90deg, #5389f2, #003265);
+    padding: 20px;
+}
+
+.container-all{
+    max-width: 1000px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: auto;
+      
+}
+
+.ctn-form{
+    width: 50%;
+    padding: 40px;
+    background: #f7f7f7;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.logo{
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.title{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 200px;
+    color: #7a7a7a;
+    padding-bottom: 25px;
+}
+
+.form-input{
+    display: block;
+    padding: .8rem 6rem;
+    border-radius: 5px;
+    border: 0;
+    outline: solid 2px rgb(143, 143, 143);
+}
+
+.form-label{
+    transition: all .5s;
+    position: absolute;
+    top: 25px;
+    left: 2rem;
+    background: white;
+    padding: 0 .5rem;
+    color:  rgb(143, 143, 143); 
+}
+
+.form-box{
+   position: relative; 
+   padding: 1rem;
+   margin-right: -5px;
+   margin-left: -10px;
+}
+
+.form-input:focus{
+    outline: solid 2px #4285f4 ;
+}
+
+.form-input:focus+.form-label{
+    transform: translateY(-1.2rem);
+    font-size: 15px;
+    color: #4285f4;
+}
+
+.form-input:not(:placeholder-shown)+.form-label{
+   
+    transform: translateY(-1.2rem);
+    transition: .5s;
+    font-size: 15px;
+    color: #4285f4;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"]{
+    color: black;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    width: 95%;
+    height: 50px;
+    margin-top: 60px;
+    color: white;
+    border: 0px;
+    background: linear-gradient(90deg, #5389f2, #003265);
+    font-weight: 300px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+   
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+    background: linear-gradient(90deg, #003265, #5389f2);
+    color: black;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+@media screen and (max-width: 800px){
+    .ctn-text{
+        display: none;
+    }
+    .ctn-form{
+        margin: auto;
+        width: 100%;
+        background: white;
+    }
+}
+
+
+
