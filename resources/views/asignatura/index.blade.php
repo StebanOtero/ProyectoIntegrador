@@ -2,7 +2,7 @@
 
 @section('titulo') Admin 
 @endsection
-
+<link rel="shortcut icon" type="image/png" href="{{asset('favicon.png')}}">
 @section('contenido')
 <div class="row">
 <div class="col-md-9">

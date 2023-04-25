@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Docente;
+use App\Http\Requests\DocenteFormRequest;
 
 class DocenteController extends Controller
 {
@@ -31,7 +32,7 @@ class DocenteController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(DocenteFormRequest $request)
     {
         $docentes=new docente;
         $docentes->documento_identidad=$request->get('documento_identidad');
